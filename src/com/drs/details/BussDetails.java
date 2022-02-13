@@ -1,6 +1,7 @@
 package com.drs.details;
 
 import com.drs.dao.impl.BussDAOImpl;
+import com.drs.menu.BussMenu;
 import com.drs.pojo.Buss;
 
 import java.util.List;
@@ -70,6 +71,7 @@ public class BussDetails {
                     break;
 
                 case 6:
+                    BussMenu.main(null);
                     break;
 
                 default:
