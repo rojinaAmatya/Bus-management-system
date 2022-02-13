@@ -35,10 +35,12 @@ public class BussDetails {
                 case 2:
                     List <Buss> viewBusses = daoImpl.viewAllBuss();
                     System.out.println("==========================================================================");
-                    System.out.println("Buss_ID\t Buss_Name\t Buss_Type\t From\t To\t");
+                    System.out.println("Buss_ID\t Buss_Name\t Buss_Type\t From\t To\t Price\t");
                     System.out.println("==========================================================================");
                     for(Buss buss: viewBusses){
-                        System.out.println(buss.getBuss_id()+ "\t" + buss.getBuss_name()+ "\t" + buss.getBuss_type()+ "\t" + buss.getDestination_from()+ "\t" + buss.getDestination_from() );
+                        System.out.println(buss.getBuss_id()+ "\t" + buss.getBuss_name()+ "\t" + buss.getBuss_type()+
+                                "\t" + buss.getDestination_from()+ "\t" + buss.getDestination_from() + "\t" + "$"+
+                                buss.getBuss_price());
                     }
                     bussDetails();
                     break;
@@ -50,7 +52,9 @@ public class BussDetails {
                     System.out.println("Buss_ID\t Buss_Name\t Buss_Type\t From\t To\t");
                     System.out.println("==========================================================================");
                     if(buss != null){
-                        System.out.println(buss.getBuss_id()+ "\t" + buss.getBuss_name()+ "\t" + buss.getBuss_type()+ "\t" + buss.getDestination_from()+ "\t" + buss.getDestination_from() );
+                        System.out.println(buss.getBuss_id()+ "\t" + buss.getBuss_name()+ "\t" + buss.getBuss_type()+
+                                "\t" + buss.getDestination_from()+ "\t" + buss.getDestination_from()+ "\t" + "$"+
+                                buss.getBuss_price() );
                     }//end of if
                     else{
                         System.out.println("**Buss Record is not found**");
