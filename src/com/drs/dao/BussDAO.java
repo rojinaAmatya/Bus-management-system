@@ -5,7 +5,7 @@ import java.util.List;
 public interface BussDAO {
     public void addBus();
     List<Buss> viewAllBus();
-    Buss viewBus(int bus_id);
-    void updateBus(int bus_id);
-    void deleteBus(int bus_id);
+    Buss viewBus(int buss_id);
+    void updateBus(int buss_id);
+    void deleteBus(int buss_id);
 }
