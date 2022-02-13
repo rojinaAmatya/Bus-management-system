@@ -3,9 +3,9 @@ import com.drs.pojo.Buss;
 import java.util.List;
 
 public interface BussDAO {
-    public void addBus();
-    List<Buss> viewAllBus();
-    Buss viewBus(int buss_id);
-    void updateBus(int buss_id);
-    void deleteBus(int buss_id);
+    public void addBuss();
+    List<Buss> viewAllBuss();
+    Buss viewBuss(int buss_id);
+    void updateBuss(int buss_id);
+    void deleteBuss(int buss_id);
 }

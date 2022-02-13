@@ -12,7 +12,7 @@ public class BussDAOImpl implements BussDAO {
     Scanner sc = new Scanner(System.in);
     List<Buss> addBusses = new ArrayList<>();
     @Override
-    public void addBus() {
+    public void addBuss() {
         int k =1;
         while(k ==1){
             System.out.println("Please enter the Buss id: ");
@@ -37,12 +37,12 @@ public class BussDAOImpl implements BussDAO {
     }
 
     @Override
-    public List<Buss> viewAllBus() {
+    public List<Buss> viewAllBuss() {
         return addBusses;
     }
 
     @Override
-    public Buss viewBus(int buss_id) {
+    public Buss viewBuss(int buss_id) {
         for(Buss buss: addBusses){
             if(buss.getBuss_id()== buss_id){
                 return buss;
@@ -52,7 +52,7 @@ public class BussDAOImpl implements BussDAO {
     }
 
     @Override
-    public void updateBus(int buss_id) {
+    public void updateBuss(int buss_id) {
         for(Buss buss: addBusses){
             if(buss.getBuss_id()== buss_id ){
                 System.out.println("Do you want to update 1. From Destination or 2. To Destination");
@@ -79,7 +79,7 @@ public class BussDAOImpl implements BussDAO {
     }
 
     @Override
-    public void deleteBus(int buss_id) {
+    public void deleteBuss(int buss_id) {
         int j = 0;
         for(Buss buss: addBusses){
             if(buss.getBuss_id() == buss_id){
