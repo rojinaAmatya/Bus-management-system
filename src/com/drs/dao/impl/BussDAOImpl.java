@@ -31,7 +31,6 @@ public class BussDAOImpl implements BussDAO {
             Buss buss = new Buss(buss_id,buss_name,buss_type, destination_from,destination_to,buss_price);
             addBusses.add(buss);
             System.out.println("Buss information is added successfully");
-
             System.out.println("Would like to add more buss? Press 1) Yes 2) No");
             k = sc.nextInt();
         }//end of while
