@@ -9,7 +9,8 @@ import java.util.Scanner;
 
 public class BussDetails {
     Scanner sc = new Scanner(System.in);
-    BussDAOImpl daoImpl = new BussDAOImpl();
+    public static BussDAOImpl daoImpl = new BussDAOImpl();
+
 
     public void bussDetails(){
         while(true){
@@ -83,5 +84,7 @@ public class BussDetails {
 
             }//end of switch
         }//end of while
+
+
     }
 }
