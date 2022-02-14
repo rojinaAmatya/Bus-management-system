@@ -1,6 +1,7 @@
 package com.drs.menu;
 
 import com.drs.details.BussDetails;
+import com.drs.details.CustomerDetails;
 
 import java.util.Scanner;
 
@@ -24,6 +25,10 @@ public class BussMenu {
                     bussDao.bussDetails();
                     break;
 
+                case 2:
+                    CustomerDetails cussDao = new CustomerDetails();
+                    cussDao.customerDetails();
+                    break;
 
                 case 3:
                     System.out.println("Thank you for using the application! ");
